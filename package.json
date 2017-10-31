@@ -1,6 +1,6 @@
 {
   "name": "in-spawn",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Spawn child process as promise, including node_modules/.bin.",
   "scripts": {
     "lint": "eslint --ext js,md .",
