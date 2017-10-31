@@ -1,0 +1,41 @@
+{
+  "name": "in-spawn",
+  "version": "0.0.0",
+  "description": "Spawn child process as promise, including node_modules/.bin.",
+  "scripts": {
+    "lint": "eslint --ext js,md .",
+    "test": "ava",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "cross-spawn-promise": "^0.10.1",
+    "npm-run-path": "^2.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "eslint": "^4.10.0",
+    "eslint-config-concise": "^0.14.0",
+    "eslint-config-concise-ava": "^0.14.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "npm-run-all": "^4.1.1",
+    "prettier-eslint-cli": "^4.4.0"
+  },
+  "repository": "ratson/in-spawn",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "*.md",
+    "index.js"
+  ],
+  "keywords": [],
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
